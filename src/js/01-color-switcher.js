@@ -17,3 +17,13 @@ document.getElementById('startButton').addEventListener('click', function () {
     }, 1000);
   }
 });
+
+document.getElementById('stopButton').addEventListener('click', function () {
+  clearInterval(timespan);
+
+  document.getElementById('startButton').disabled = false;
+
+  this.disabled = true;
+
+  timespan = undefined;
+});
